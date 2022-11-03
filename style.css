@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* :root{ */
+    /* --backgraund: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%); */
+    /* --color-primary: #667eea;
+    --color-secundary: #764ba2;
+    --boton-padding: 20px 40px;
+} */
+
+
+
+body{ 
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.hero_titulo{
+    font-size: 65px;
+    padding: 20px;
+
+}
+
+
+span{
+    color: brown;
+    border-style: dashed;
+}
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+
+}
+
+.subtitulos{
+    font-family: 'Raleway', sans-serif;
+    color: hsl(357, 38%, 38%);
+    font-size: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+
+
+}
+
+.hero{
+    height: 100vh;
+    background-image: var(--backgraund), url(hero.jpg);
+    backgraund: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    position: relative;
+
+}
+
+.hero .container{
+    padding: 0;
+}
+
+.navegador{
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    align-items: center;
+    font-weight: 500;
+    border: 1px solid color white;
+}
+
+.nav_class{
+    color:black;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    list-style: none;
+    font-weight: 600;
+}
+
+.hero_container{
+    display: flex;
+    height: calc(100vh - 70px);
+    text-align: center;
+    color: #667eea;
+
+}
+
+.banner.hero{
+    width: 80%;
+    margin-bottom: 45px;
+
+}
+
+
+.hero_container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: white;
+}
+
+/* NUESTROS CURSOS */
+
+.main{
+    background-color: bisque;
+    text-align: center;
+    border-style: inherit;
+    
+}
+
+.parrafo_nuestros_cursos{
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+    margin: auto;
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+
+.box{
+    min-height: 350px;
+    display: grid;
+    background-color: bisque;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* GALERIA */
+
+.galeria{
+    border-style: groove;
+
+}
+
+.galeria_grid{
+    display: grid;
+    height: 500px;
+    grid-template-areas:
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    gap: 10px;
+}
+
+img{
+    width:100% ;
+}
+
+.galeria_item{
+    position: relative;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    }
+
+.galeria_img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    cursor: pointer;
+    
+}
+
+.galeria_item:nth-of-type(1){
+    grid-area: img1 ;
+}
+
+.galeria_item:nth-of-type(2){
+    grid-area: img2 ;
+}
+
+.galeria_item:nth-of-type(3){
+    grid-area: img3 ;
+}
+
+.galeria_item:nth-of-type(4){
+    grid-area: img4 ;
+}
+
+.galeria_item:nth-of-type(5){
+    grid-area: img5 ;
+}
+
+.galeria_hover{
+    position: absolute;
+    background: rgb(139, 95, 95);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+    
+}
+
+.galeria_item:hover .galeria_hover{
+    transform: translate(0%);
+}
+
+.box_tres{
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+.tutorial{
+    padding: 1em 0;
+    width: 100%;
+    height:auto;
+    background-color: bisque;
+
+}
+
+
+footer{
+    display: block;
+    text-align: center;
+    border-style: outset;
+}
+
+/* Destop firts: */
+/* @media (max-width:1920px){
+    body{
+        background-color: cadetblue;
+    }
+    
+}
+
+@media (max-width:1280px){
+    body{
+        background-color: coral;
+    }
+    
+}
+
+
+@media screen (max-width:800px){
+    body{
+        background-color: cadetblue;
+    }
+    
+}
+
+
+@media screen (max-width:480px){
+    body{
+        background-color: coral;
+    }
+    
+}
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
