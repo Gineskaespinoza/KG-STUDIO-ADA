@@ -6,18 +6,37 @@
 
 
 :root{ 
-    --backgraund: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%); */
-    /* /* /* --color-primary: #667eea; */
+    --backgraund: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
     --color-secundary: #764ba2;
-    --boton-padding: 20px 40px; */
+    --boton-padding: 20px 40px; 
 } 
 
 
 body{ 
     font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    /* height: 100vh; */
+    padding: 3px 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-image: var(--backgraund), url(assets/hero.jpg);
+    backgraund: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    position: relative;
 
 }
+
+.header .container{
+    padding: 0;
+}
+
+
 
 .hero_titulo{
     font-size: 65px;
@@ -32,49 +51,22 @@ span{
 }
 
 
-.container{
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 80px 0;
-    max-width: 1200px;
-
-}
-
 .subtitulos{
     font-family: 'Raleway', sans-serif;
     color: hsl(357, 38%, 38%);
     font-size: 50px;
     margin-bottom: 40px;
     text-align: center;
-
-
 }
 
-.hero{
-    height: 100vh;
-    background-image: var(--backgraund), url(hero.jpg);
-    backgraund: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
-    background-position: center;
-    position: relative;
-
-}
-
-.hero .container{
-    padding: 0;
-}
 
 .navegador{
-    display: flex;
-    justify-content: flex-end;
+    display: inline-block;
+    align-items: flex-start;
     height: 80px;
-    align-items: center;
     font-weight: 500;
     border: 1px solid color white;
-}
+} 
 
 .nav_class{
     color:black;
