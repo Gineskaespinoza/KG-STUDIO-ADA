@@ -5,15 +5,12 @@
 }
 
 
-
-
-/* :root{ */
-    /* --backgraund: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%); */
-    /* --color-primary: #667eea;
+:root{ 
+    --backgraund: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%); */
+    /* /* /* --color-primary: #667eea; */
     --color-secundary: #764ba2;
-    --boton-padding: 20px 40px;
-} */
-
+    --boton-padding: 20px 40px; */
+} 
 
 
 body{ 
@@ -110,7 +107,7 @@ span{
     color: white;
 }
 
-/* NUESTROS CURSOS */
+NUESTROS CURSOS
 
 .main{
     background-color: bisque;
