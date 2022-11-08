@@ -8,7 +8,7 @@
 :root{ 
     --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
     --color-primary: #667eea;
-    --color-secundary: #764ba2;
+    --color-secondary: #764ba2;
     --boton-padding: 20px 40px; 
 } 
 
@@ -18,12 +18,9 @@ body{
 }
 
 .header{
-    height: 100%;
-    /* padding: 3px 9px; */
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center ; */
-    background-image: var(--background), url(assets/hero.jpg);
+    height: 100%; 
+    padding: 3px 9px; 
+    background-image: var(--background), url("../assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed;
@@ -32,10 +29,13 @@ body{
 
 }
 
-.container{
+.header.contenedor{
+    padding: 0;
+}
+
+.contenedor{
     width: 90%;
     margin: 0 auto;
-    background: bisque;
     overflow: hidden;
     padding: 80px 0;
     max-width: 1200px;
@@ -53,18 +53,28 @@ body{
     padding: 0 15px;
 }
 
-
+.hero_container{
+    display: flex;
+    height: calc(100vh - 70px);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 
 .hero_titulo{
-    font-size: 5em;
-    padding: 20px;
+    font-size: 3rem;
 }
 
-/* .hero.subtitulo{
-    font-size: 1rem;
-    margin: 15px 0;
+.hero_textos{
+    width: 80px;
+    margin-bottom: 40px;
 }
- */
+
+.hero_subtitulo{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
 
 span{
     color: brown;
@@ -80,13 +90,12 @@ span{
     text-align: center;
 }
 
-.navegador{
+/* .navegador{
     text-decoration: none;
-    }
+    } */
 
 
 .navegador{
-    height: 70px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -96,7 +105,7 @@ span{
 } 
 
 .nav_class{
-    color:black;
+    color:white;
     text-decoration: none;
     margin-right: 20px;
     padding: 10px 15px;
@@ -104,19 +113,6 @@ span{
     font-weight: inherit;
 }
 
-.hero_container{
-    display: flex;
-    height: calc(100vh - 70px);
-    align-items: center;
-    color: white;
-}
-
-.banner_hero{
-    width: 80px;
-    margin-bottom: 50px;
-
-
-}
 
 /* main */
 
@@ -138,14 +134,38 @@ span{
 
 .box{
     min-height: 350px;
-    display: grid;
+    display: flex;
     background-color: bisque;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    text-decoration: none;
-    list-style: none;
 }
+
+.box_dos{
+   display: block;
+   justify-content: space-around;
+  align-items: center;
+   padding: 20px;
+   font-family: 'Raleway', sans-serif;
+}
+
+
+.type{
+padding: 5px;
+color: var(--color-secondary);
+
+}
+
+.box_cinco{
+    display: inline-block;
+    padding: 10px;
+}
+
+.list_item{
+      text-decoration: none;
+     list-style: none;
+}
+
 
 /* GALERIA */
 
@@ -235,6 +255,13 @@ img{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     list-style: none;
+}
+
+
+.video.clip{
+    width: 70px;
+    height: 100px;
+    padding: 30px;
 }
 
 .tutorial{
