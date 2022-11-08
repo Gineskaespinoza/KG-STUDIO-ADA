@@ -20,6 +20,9 @@ body{
 .header{
     height: 100%; 
     padding: 3px 9px; 
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
     background-image: var(--background), url("../assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,6 +66,7 @@ body{
 
 .hero_titulo{
     font-size: 3rem;
+    line-height: 1.2em;
 }
 
 .hero_textos{
@@ -90,18 +94,15 @@ span{
     text-align: center;
 }
 
-/* .navegador{
-    text-decoration: none;
-    } */
 
-
-.navegador{
-    display: flex;
-    justify-content: flex-end;
+.navegador ul{ 
+    display: inline-block; 
+    justify-content: flex-end; 
     align-items: center;
+    line-height: 1.2em;
     height: 80px;
     font-weight: 700;
-    
+     
 } 
 
 .nav_class{
@@ -111,6 +112,7 @@ span{
     padding: 10px 15px;
     list-style: none;
     font-weight: inherit;
+    transition: .3s ease-out all;
 }
 
 
