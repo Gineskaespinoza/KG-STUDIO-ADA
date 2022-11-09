@@ -34,6 +34,8 @@ body{
 
 .header.contenedor{
     padding: 0;
+    height: 80px;
+    width: 80px;
 }
 
 .contenedor{
@@ -47,8 +49,6 @@ body{
 .menu{
 
     list-style: none;
-    font-size: 7px;
-    font-weight: 1000px;
 }
 
 .menu li {
@@ -56,17 +56,23 @@ body{
     padding: 0 15px;
 }
 
+.menu a{
+    text-decoration: none;
+    font-size: medium;
+}
+
 .hero_container{
     display: flex;
     height: calc(100vh - 70px);
     justify-content: center;
-    align-items: center;
     color: white;
 }
 
 .hero_titulo{
     font-size: 3rem;
     line-height: 1.2em;
+    text-align: left;
+   
 }
 
 .hero_textos{
@@ -107,14 +113,10 @@ span{
 
 .nav_class{
     color:white;
-    text-decoration: none;
     margin-right: 20px;
-    padding: 10px 15px;
-    list-style: none;
-    font-weight: inherit;
-    transition: .3s ease-out all;
-}
+    padding: 20px 15px;
 
+}
 
 /* main */
 
@@ -150,6 +152,7 @@ span{
    padding: 20px;
    font-family: 'Raleway', sans-serif;
 }
+
 
 
 .type{
@@ -274,11 +277,55 @@ img{
 
 }
 
+/* footer */
+
+
 footer{
-    display: block;
-    text-align: center;
-    border-style: outset;
+    background: aliceblue;
+    height: 150px;
 }
+
+.contac{
+
+}
+
+.footer_titulado{
+  font-weight: 400;  
+  color: var(--color-secondary) ;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_container_icons{
+    display: inline-block;
+    width: 60px; 
+    height: 60px;
+    color: burlywood;
+    text-align: center;
+    border: 1px solid brown;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.footer__icon{
+    
+    font-size: 30px ;
+    text-decoration: none;
+}
+
+.fa-brands{
+    line-height: 40px;
+    color:grey;
+}
+
+
+
 
 /* Destop firts: */
 /* @media (max-width:1920px){
