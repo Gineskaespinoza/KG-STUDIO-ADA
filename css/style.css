@@ -19,9 +19,6 @@ body{
 .header{
     height: 100%; 
     padding: 3px 9px; 
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
     background-image: var(--background), url("../assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,18 +27,20 @@ body{
     position: relative;
 }
 
+.contenedor{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 45px 0;
+}
+
 .header.contenedor{
     padding: 0;
     height: 80px;
     width: 80px;
-}
-
-.contenedor{
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 80px 0;
-    max-width: 1200px;
 }
 
 .menu{
@@ -50,13 +49,51 @@ body{
 
 .menu li {
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 20px;   
 }
 
 .menu a{
     text-decoration: none;
     font-size: medium;
 }
+/* 
+.navegador{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+
+}
+
+.navegador ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navegador ul li a{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 2rem;
+    color: white;
+    font-size: 15px;
+}
+
+.navegador ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: -3rem;
+    background: grey;
+    transition: -5s;
+} */
+
 
 .hero_container{
     display: flex;
@@ -72,10 +109,11 @@ body{
     text-align: right;
 }
 
-.hero_textos{
-    /* width: 80px;
-    margin-bottom: 40px; */
-}
+/* .hero_textos{
+ width: 80px;
+ height: ;
+    
+} */
 
 .hero_subtitulo{
     text-align: right;
@@ -98,16 +136,6 @@ span{
     text-align: center;
 }
 
-
-.navegador ul{ 
-    display: inline-block; 
-    justify-content: flex-end; 
-    align-items: center;
-    line-height: 1.2em;
-    height: 80px;
-    font-weight: 700;
-     
-} 
 
 .nav_class{
     color:white;
@@ -135,21 +163,20 @@ span{
 }
 
 .box{
-    min-height: 350px;
-    display: flex;
+    padding: 30px;
+    margin: 0;
     background-color: bisque;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+    overflow: hidden;
+    
 }
 
 .box_dos{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   padding: 20px;
+
+   margin: 1em;
+   padding: 1em;
    font-family: 'Raleway', sans-serif;
-   
+   float: left;
+   align-items: center;
 }
 
 .type{
@@ -157,12 +184,16 @@ padding: 5px;
 color: var(--color-secondary);
 }
 
+
 .box_cinco{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-      
+    background-color: rgb(199, 195, 192);
+    width: 160px;
+    height: 160px;
+    margin: 1em;
+    padding: 1em;
+    float: left;
+    color: black;
+    
 }
 
 .list_item{
