@@ -14,11 +14,16 @@
 
 body{ 
     font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    color: hsl(357, 38%, 38%);
 }
 
 .header{
-    height: 100%; 
+
     padding: 3px 9px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-image: var(--background), url("../assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,9 +33,7 @@ body{
 }
 
 .contenedor{
-    display: block;
-    justify-content: space-between;
-    align-items: center;
+    
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
@@ -38,62 +41,47 @@ body{
 }
 
 .header.contenedor{
+    text-align: center;
     padding: 0;
     height: 80px;
     width: 80px;
 }
 
 .menu{
+    text-align: center;
     list-style: none;
 }
 
 .menu li {
     display: inline-block;
-    padding: 0 20px;   
+    padding: 0 10px;   
 }
 
 .menu a{
     text-decoration: none;
     font-size: medium;
 }
-/* 
-.navegador{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
 
+
+.boton{
+    display: inline-block;
+    justify-content:center;
+    width: 2em;
+    height: 6em;
+    padding: 100px;
+   
 }
 
-.navegador ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-
-}
-
-.navegador ul li a{
-    position: relative;
-    display: block;
+.click button{
     text-align: center;
-    margin: 0 2rem;
-    color: white;
-    font-size: 15px;
+    background-color: darkgrey;
+    padding: 8px 16px ;
+    font-size: 12px;
+    color: black;
+    border-radius: 20px ;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
 }
-
-.navegador ul li a::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: -3rem;
-    background: grey;
-    transition: -5s;
-} */
-
 
 .hero_container{
     display: flex;
@@ -109,11 +97,6 @@ body{
     text-align: right;
 }
 
-/* .hero_textos{
- width: 80px;
- height: ;
-    
-} */
 
 .hero_subtitulo{
     text-align: right;
@@ -127,8 +110,8 @@ span{
     border-style: dashed;
 }
 
-
 .subtitulos{
+    padding: 10px;
     font-family: 'Raleway', sans-serif;
     color: hsl(357, 38%, 38%);
     font-size: 50px;
@@ -136,64 +119,69 @@ span{
     text-align: center;
 }
 
-
 .nav_class{
     color:white;
     margin-right: 20px;
     padding: 20px 15px;
-
 }
 
 /* main */
 
 .main{
+    padding: 0;
+    margin: 0;
     background-color: bisque;
     text-align: center;
-    border-style: inherit;
-    
+    border-style: inherit;  
 }
 
 .parrafo_nuestros_cursos{
+    text-align: justify;
     font-family: 'Raleway', sans-serif;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     font-weight: 200;
     line-height: 1.2;
     font-size: 1.5rem;
 }
 
 .box{
+    /* background-image: url("../assets/img9.jpg"); */
+    align-items: center;
     padding: 30px;
     margin: 0;
     background-color: bisque;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
 
 .box_dos{
-
-   margin: 1em;
-   padding: 1em;
-   font-family: 'Raleway', sans-serif;
-   float: left;
-   align-items: center;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    font-family: 'Raleway', sans-serif;
 }
+    
 
 .type{
-padding: 5px;
-color: var(--color-secondary);
+    text-align: justify;
+    display:inline-block;
+    border-style: ridge;
+    padding: 5px;
+    color: hsl(357, 38%, 38%);
 }
 
-
-.box_cinco{
-    background-color: rgb(199, 195, 192);
+.box_seis{
+    display: inline-block;
+    text-align: center;
+    background-image: url("../assets/img3.jpg");
     width: 160px;
     height: 160px;
     margin: 1em;
-    padding: 1em;
-    float: left;
-    color: black;
-    
+    padding: 3em 2em;
+    float: ;
+    color: hsl(357, 38%, 38%);
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .list_item{
@@ -228,9 +216,6 @@ GALERIA */
    cursor: pointer;
    border-radius: 6px;
 }
-
-
-
 
 .list li{
     text-decoration: none;
@@ -318,6 +303,8 @@ footer{
 }
 
 .mi_ft{
+    padding: 20px;
+    margin-bottom: 15px;
    
 }
 
@@ -325,40 +312,31 @@ footer{
 
 
 /* Destop firts: */
-/* @media (max-width:1920px){
-    body{
-        background-color: cadetblue;
+
+@media screen and (max-width:600px) {
+
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .click{
+        display: flex;
+        flex-direction: column;
     }
     
-}
-
-@media (max-width:1280px){
-    body{
-        background-color: coral;
-    }
-    
-}
-
-
-@media screen (max-width:800px){
-    body{
-        background-color: cadetblue;
-    }
-    
-}
-
-
-@media screen (max-width:480px){
-    body{
-        background-color: coral;
-    }
-    
+   
 }
 
 
-
-
- */
 
 
 
