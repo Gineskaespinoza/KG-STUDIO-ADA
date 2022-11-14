@@ -6,15 +6,23 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    cursor: all-scroll;
+    background: url(../assets/img9.jpg);
+}
+    
+section{
+    padding: 2.5em;
+    margin: 0;
+    text-align: justify;
+    font-size: 20px;
+  
 }
 
-
-.h1{
+.titulo{
     padding: 10px;
     font-family: 'Raleway', sans-serif;
     color: hsl(357, 38%, 38%);
-    font-size: 50px;
+    font-size: 3em;
     margin-bottom: 40px;
     text-align: center;
+    justify-content: center;
     }

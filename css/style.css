@@ -19,11 +19,7 @@ body{
 }
 
 .header{
-
     padding: 3px 9px; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-image: var(--background), url("../assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +29,6 @@ body{
 }
 
 .contenedor{
-    
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
@@ -62,26 +57,28 @@ body{
     font-size: medium;
 }
 
-
-.boton{
+ .boton{
     display: inline-block;
     justify-content:center;
     width: 2em;
     height: 6em;
     padding: 100px;
-   
 }
-
+   
 .click button{
+    width: 150px;
+    position: absolute;
     text-align: center;
+    top: 15px;
+    left: 10px;
     background-color: darkgrey;
     padding: 8px 16px ;
     font-size: 12px;
     color: black;
     border-radius: 20px ;
-    transition: transform 0.3s ease; 
     cursor: pointer;
 }
+
 
 .hero_container{
     display: flex;
@@ -92,17 +89,17 @@ body{
 }
 
 .hero_titulo{
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: 1.2em;
     text-align: right;
 }
-
 
 .hero_subtitulo{
     text-align: right;
     font-size: 2rem;
     font-weight: 300;
     margin: 20px 0;
+    text-decoration-line: overline;
 }
 
 span{
@@ -146,7 +143,6 @@ span{
 }
 
 .box{
-    /* background-image: url("../assets/img9.jpg"); */
     align-items: center;
     padding: 30px;
     margin: 0;
@@ -161,7 +157,6 @@ span{
     font-family: 'Raleway', sans-serif;
 }
     
-
 .type{
     text-align: justify;
     display:inline-block;
@@ -173,12 +168,11 @@ span{
 .box_seis{
     display: inline-block;
     text-align: center;
-    background-image: url("../assets/img3.jpg");
+    background-image: url("../assets/img5.jpg");
     width: 160px;
     height: 160px;
     margin: 1em;
     padding: 3em 2em;
-    float: ;
     color: hsl(357, 38%, 38%);
     border: 1px solid black;
     border-radius: 10px;
@@ -215,6 +209,20 @@ GALERIA */
    object-fit: cover;
    cursor: pointer;
    border-radius: 6px;
+   overflow: hidden;
+   transition: all 50ms ease-out;
+}
+
+.album_studio img .fotos_galeria{
+    position: absolute;
+    top 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 0.7);
+    transition: all 50ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
 }
 
 .list li{
@@ -272,7 +280,6 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
-
 }
 
 .footer_container_icons{
@@ -287,17 +294,18 @@ footer{
 }
 
 .footer__icon{
-    
     font-size: 25px ;
     text-decoration: none;
 }
 
 .fa-brands{
+    text-align: center;
     line-height: 40px;
     color:grey;
 }
 
 .fa-solid{
+    text-align: center;
     line-height: 40px;
     color:grey;
 }
@@ -309,9 +317,23 @@ footer{
 }
 
 
-
-
 /* Destop firts: */
+
+
+@media screen and (max-width:750px) {
+
+    body{
+        background-color: silver;
+        color: black;
+    
+    }
+
+   .nav_class{
+    color: black;
+    }
+    
+}
+
 
 @media screen and (max-width:600px) {
 
@@ -319,7 +341,7 @@ footer{
     .header{
         display: flex;
         flex-direction: column;
-        background-color: aqua;
+        background-image: var(--background), url("../assets/img9.jpg");
     }
 
     .menu{
@@ -328,13 +350,23 @@ footer{
 
     }
 
-    .click{
-        display: flex;
-        flex-direction: column;
-    }
-    
-   
 }
+
+@media screen and (max-width:450px) {
+
+    .album_studio{
+        display: inline-block;  
+}
+
+
+}
+
+
+
+
+
+
+
 
 
 
