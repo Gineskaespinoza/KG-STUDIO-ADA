@@ -19,6 +19,7 @@ body{
 }
 
 .header{
+    height: 100%;
     padding: 3px 9px; 
     background-image: var(--background), url("../assets/hero.jpg");
     background-repeat: no-repeat;
@@ -42,22 +43,56 @@ body{
     width: 80px;
 }
 
-.menu{
-    text-align: center;
+/* .click-nav-contenedor{
+   
+    align-items: center;
+    
+} */
+
+.navegador{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px; 
+
+}
+
+.navegador ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
-.menu li {
+.navegador ul li{
     display: inline-block;
-    padding: 0 10px;   
 }
 
-.menu a{
+
+.navegador ul li a{
+    color: white;
+    display: block;
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    font-size: medium;
+    transition: all 0.4s linear;
+    border-radius: 5px ;
 }
 
- .boton{
+.navegador ul li a:hover{ 
+    background: #667eea;
+
+}
+
+.click button{
+    display: inline-block;
+    text-align: center;
+
+    background: #764ba2;
+    border-radius: 40px;
+    padding: 0.8em;
+
+}
+
+ /* .boton{
     display: inline-block;
     justify-content:center;
     width: 2em;
@@ -77,8 +112,7 @@ body{
     color: black;
     border-radius: 20px ;
     cursor: pointer;
-}
-
+}  */
 
 .hero_container{
     display: flex;
@@ -86,7 +120,15 @@ body{
     height: calc(100vh - 70px);
     justify-content: center;
     color: white;
+    }
+
+
+/* .banner{
+    width: 75px;
+    margin-bottom: 50px;
 }
+ */
+
 
 .hero_titulo{
     font-size: 5rem;
@@ -116,11 +158,6 @@ span{
     text-align: center;
 }
 
-.nav_class{
-    color:white;
-    margin-right: 20px;
-    padding: 20px 15px;
-}
 
 /* main */
 
@@ -129,7 +166,7 @@ span{
     margin: 0;
     background-color: bisque;
     text-align: center;
-    border-style: inherit;  
+    
 }
 
 .parrafo_nuestros_cursos{
@@ -142,18 +179,19 @@ span{
     font-size: 1.5rem;
 }
 
-.box{
+.box { 
     align-items: center;
-    padding: 30px;
+    padding: 15px;
     margin: 0;
     background-color: bisque;
     overflow: hidden;  
 }
 
 .box_dos{
+    margin: 5em;
     justify-content: center;
-    margin: 1em;
-    padding: 1em;
+    margin: 30px;
+    padding: 2em;
     font-family: 'Raleway', sans-serif;
 }
     
@@ -168,7 +206,7 @@ span{
 .box_seis{
     display: inline-block;
     text-align: center;
-    background-image: url("../assets/img5.jpg");
+    background-image: url("../assets/img10.jpg");
     width: 160px;
     height: 160px;
     margin: 1em;
@@ -190,7 +228,6 @@ GALERIA */
     width: 100%;
     height: 100vh;
     padding: 4% 2%;
-
 }
 
 .album_studio{
@@ -250,8 +287,6 @@ GALERIA */
     padding: 1em 0;
     width: 100%;
     height:500px;
-
-
 }
 
 /* footer */
@@ -344,7 +379,7 @@ footer{
         background-image: var(--background), url("../assets/img9.jpg");
     }
 
-    .menu{
+    .navegador{
         display: flex;
         flex-direction: column;
 
@@ -358,8 +393,33 @@ footer{
         display: inline-block;  
 }
 
+    .hero_subtitulo{
+        font-size: 20px;
+    }
+
+    .hero_titulo{
+        font-size: 35px ;
+    }
+    .navegador{
+         display: flex;
+        flex-direction: column;
+
+    }
+   
+}
+
+@media screen and (max-width:350px) {
+
+.navegador{
+    display: flex;
+    flex-direction: column;
+}
+
 
 }
+
+
+
 
 
 
