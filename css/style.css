@@ -43,11 +43,6 @@ body{
     width: 80px;
 }
 
-/* .click-nav-contenedor{
-   
-    align-items: center;
-    
-} */
 
 .navegador{
     display: flex;
@@ -83,37 +78,17 @@ body{
 }
 
 .click button{
-    display: inline-block;
-    text-align: center;
-
-    background: #764ba2;
-    border-radius: 40px;
-    padding: 0.8em;
+    
+    padding: 6px 12px;
+    margin-top: 50px;
+    background: hsl(357, 38%, 38%);
+    border-radius: 15px;
+    border: none;
+    font-size: medium;
+    color: white;
 
 }
-
- /* .boton{
-    display: inline-block;
-    justify-content:center;
-    width: 2em;
-    height: 6em;
-    padding: 100px;
-}
-   
-.click button{
-    width: 150px;
-    position: absolute;
-    text-align: center;
-    top: 15px;
-    left: 10px;
-    background-color: darkgrey;
-    padding: 8px 16px ;
-    font-size: 12px;
-    color: black;
-    border-radius: 20px ;
-    cursor: pointer;
-}  */
-
+ 
 .hero_container{
     display: flex;
     flex-direction: column;
@@ -121,14 +96,6 @@ body{
     justify-content: center;
     color: white;
     }
-
-
-/* .banner{
-    width: 75px;
-    margin-bottom: 50px;
-}
- */
-
 
 .hero_titulo{
     font-size: 5rem;
@@ -275,14 +242,12 @@ GALERIA */
     list-style: none;
 }
 
-
 .video_clip{
     display: flex;
     justify-content: center;
     background-color: bisque;
     }
     
-
 .tutorial iframe{
     padding: 1em 0;
     width: 100%;
@@ -348,8 +313,7 @@ footer{
 .mi_ft{
     padding: 20px;
     margin-bottom: 15px;
-   
-}
+    }
 
 
 /* Destop firts: */
@@ -369,22 +333,12 @@ footer{
     
 }
 
+@media screen and (max-width:639px) {
 
-@media screen and (max-width:600px) {
-
-
-    .header{
-        display: flex;
-        flex-direction: column;
-        background-image: var(--background), url("../assets/img9.jpg");
+    .navegador ul li a{
+        font-size: 1em;
     }
-
-    .navegador{
-        display: flex;
-        flex-direction: column;
-
-    }
-
+    
 }
 
 @media screen and (max-width:450px) {
@@ -408,19 +362,22 @@ footer{
    
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:356px) {
+ 
+    .header{
+      
+        background-image: var(--background), url("../assets/img9.jpg");
+    }
 
-.navegador{
+     .navegador{
+   
     display: flex;
     flex-direction: column;
 }
 
 
 }
-
-
-
-
+ 
 
 
 
