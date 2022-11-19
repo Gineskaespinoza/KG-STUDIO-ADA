@@ -204,15 +204,11 @@ span{
     text-align: center;
 }
 
-.{
-    background-color: red;
+.products{
+    color: hsl(357, 38%, 38%);
+    background: white;
+   
 }
-
-
-.micro{
-    background-color: white;
-}
-
 
 .box_seis{
     display: inline-block;
@@ -222,7 +218,6 @@ span{
     height: 160px;
     margin: 1em;
     padding: 3em 2em;
-    color: hsl(357, 38%, 38%);
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 0 20px 30px rgb(210, 172, 172);
@@ -232,7 +227,6 @@ span{
       text-decoration: none;
      list-style: none;
 }
-
 
 GALERIA */
 
@@ -333,10 +327,9 @@ footer{
     display: inline-block;
     width: 60px; 
     height: 60px;
-    color: burlywood;
     text-align: center;
-    border: 1px solid brown;
-    border-radius: 50%;
+    border: 1px solid rgb(202, 55, 55);
+    border-radius: 45px;
     margin: 30px;
 }
 
