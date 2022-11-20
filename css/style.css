@@ -76,16 +76,15 @@ body{
 
 .click button{
     display: inline-block;
-    align-items: center;
     text-align: center;
     text-decoration: none;
-
-    padding: 20px 35px;
+    padding: 35px 65px;
     margin-top: 50px;
     background: rgb(202, 55, 55);
+    background-size: 300px;
     border-radius: 50px;
     border: none;
-    font-size: medium;
+    font-size: 25px;
     color: white;
     position: relative;
     overflow: hidden;
@@ -153,9 +152,7 @@ span{
 }
 
 .parrafo_nuestros_cursos{
-    /* text-align: justify; */
     font-family: 'Raleway', sans-serif;
-    /* width: 80%; */
     margin: 30px;
     font-weight: 200;
     line-height: 1.2;
@@ -207,7 +204,7 @@ span{
 .products{
     color: hsl(357, 38%, 38%);
     background: white;
-   
+    padding-left: 80px;
 }
 
 .box_seis{
@@ -296,7 +293,6 @@ GALERIA */
 }
 
 /* footer */
-
 
 footer{
     padding: 25px;
