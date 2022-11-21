@@ -72,7 +72,6 @@ body{
 
 .navegador ul li a:hover{ 
     background-image: linear-gradient(to right,rgb(202, 55, 55), hsl(357, 80%, 84%));
-
 }
 
 .click button{
@@ -153,7 +152,6 @@ span{
     padding: 15px;
     margin: 0;
     overflow: hidden;  
-    /* background-color: bisque;  */
     background-color: rgb(207, 182, 182) ;
 }
 
@@ -189,16 +187,21 @@ span{
     text-align: center;
 }
 
+
 .products{
-    color: hsl(357, 38%, 38%);
+    color: white;
     background: white;
-    padding-left: 80px;
+    padding-left: 4rem;
+    overflow: hidden;
+    
 }
 
 .box_seis{
-    display: inline-block;
+    float: left;
+    /* display: inline-block;
+    align-items: center; */
     text-align: center;
-    background-image: url("../assets/img10.jpg");
+    background-image: url("../assets/img8.jpg");
     width: 160px;
     height: 160px;
     margin: 1em;
@@ -334,7 +337,6 @@ footer{
     margin-bottom: 15px;
     }
 
-
 /* Destop firts: */
 
 @media screen and (max-width:795px) {
@@ -359,13 +361,11 @@ footer{
 
     .hero.titulo{
         font-size: 2rem;
-
     }
 
     .hero_subtitulo{
         font-size: 1rem
     }
-    
 }
 
 @media screen and (max-width:550px){
@@ -388,7 +388,6 @@ footer{
         font-size: 65px ;
         padding: 20px;
     }
-
 }
 
 @media screen and (max-width:450px) {
@@ -409,8 +408,24 @@ footer{
         flex-direction: column;
 
     }
-   
 }
+
+@media screen and (max-width:400x) {
+    .subtitulos{
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    }
+
+
+
+
+
+
+
+
+
 
 
 
