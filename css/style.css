@@ -63,7 +63,6 @@ body{
 
 .navegador ul li a{
     color: white;
-    display: inline-block;
     padding: 0.5rem 1rem;
     text-decoration: none;
     transition: all 0.4s linear;
@@ -104,7 +103,7 @@ body{
 
 .hero_titulo{
     padding-top: 40px;
-    font-size: 7rem;
+    font-size: 9rem;
     line-height: 1.2em;
     text-align: center;
     text-shadow: 2px 4px black;
@@ -113,7 +112,7 @@ body{
 
 .hero_subtitulo{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
     margin: 20px 0;
     text-decoration-line: overline;
@@ -134,8 +133,6 @@ span{
     margin: 50px 0;
     text-align: center;
     text-shadow: 1px 2px black;
-    
-    
 }
 
 /* main */
@@ -289,7 +286,7 @@ span{
 
 /* footer */
 
-footer{
+.footer{
     padding: 25px;
     height: 100px;
     text-align: center;
@@ -344,6 +341,16 @@ footer{
 
 /* Destop firts: */
 
+@media screen and (max-width:984px) {
+    .hero_titulo{
+        font-size: 7rem;
+    }
+    .hero_subtitulo{
+        font-size: 3rem;
+         
+    }
+}
+
 @media screen and (max-width:795px) {
     .header{
      display: flex;
@@ -354,8 +361,27 @@ footer{
 
     .click button{
         font-size: 1rem;
-        padding: 15px 25px;
+        padding: 30px 45px;
         margin: 0;
+    }
+
+    .hero_titulo{
+        font-size: 6rem;
+    }
+    .hero_subtitulo{
+        font-size: 2rem;
+         
+    }
+}
+
+@media screen and (max-width:728px) {
+
+    .hero_titulo{
+        font-size: 5rem;
+    }
+    .hero_subtitulo{
+        font-size: 2rem;
+         
     }
 }
 
