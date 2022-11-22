@@ -73,16 +73,15 @@ body{
     background-image: linear-gradient(to right,rgb(202, 55, 55), hsl(357, 80%, 84%));
 }
 
-.click button{
+.click{
     padding: 30px 55px;
-    margin-top: 50px;
-    margin-left: 85px;
+    /* margin-left: 200px; */
     border: 1px solid white;
     background: rgb(202, 55, 55);
     background-size: 300px;
     border-radius: 50px;
     font-size: 20px;
-    width: fit-content;
+    text-decoration: none;
     color: white;
     cursor: pointer;
     position: relative;
@@ -341,13 +340,12 @@ span{
 
 /* Destop firts: */
 
-@media screen and (max-width:984px) {
+@media screen and (max-width:990px) {
     .hero_titulo{
         font-size: 7rem;
     }
     .hero_subtitulo{
-        font-size: 3rem;
-         
+        font-size: 2rem;
     }
 }
 
@@ -359,7 +357,7 @@ span{
      padding: 0;
     }
 
-    .click button{
+    .click{
         font-size: 1rem;
         padding: 30px 45px;
         margin: 0;
@@ -368,21 +366,28 @@ span{
     .hero_titulo{
         font-size: 6rem;
     }
+
     .hero_subtitulo{
         font-size: 2rem;
-         
     }
 }
 
-@media screen and (max-width:728px) {
+@media screen and (max-width:683px){
+    .header{
+       padding: 35px 25px; 
+    }
 
-    .hero_titulo{
-        font-size: 5rem;
+    .hero.titulo{
+        font-size: 5rem
     }
+
     .hero_subtitulo{
-        font-size: 2rem;
-         
+        font-size:1rem
     }
+
+     .click{
+        padding: 30px 20px;
+     }
 }
 
 @media screen and (max-width:612px){
@@ -391,7 +396,7 @@ span{
     }
 
     .hero.titulo{
-        font-size: 2rem;
+        font-size: 3em;
     }
 
     .hero_subtitulo{
@@ -400,7 +405,6 @@ span{
 }
 
 @media screen and (max-width:550px){
-
     .header{
         display: flex;
         align-items: center;
@@ -408,7 +412,7 @@ span{
     }
     
     .hero_subtitulo{
-        font-size: 15px;
+        font-size: 25px;
         margin:0;
         text-decoration-line: none;
         padding: 20px;
@@ -416,40 +420,21 @@ span{
     }
 
     .hero_titulo{
-        font-size: 65px ;
+        font-size: 50px ;
         padding: 20px;
     }
 }
 
-@media screen and (max-width:450px) {
-
-    .album_studio{
-        display: inline-block;  
-    }
-
+@media screen and (max-width:450px){
     .hero_subtitulo{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .hero_titulo{
-        font-size: 35px ;
+        font-size: 55px ;
     }
-    .navegador{
-         display: flex;
-        flex-direction: column;
-
-    }
-}
-
-@media screen and (max-width:400x) {
-    .subtitulos{
-        font-size: 40px;
-        font-weight: 300;
-    }
-
-    }
-
-
+  }
+  
 
 
 

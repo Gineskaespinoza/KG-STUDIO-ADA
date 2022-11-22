@@ -7,9 +7,11 @@
 body{
     font-family: 'Raleway', sans-serif;
     background: url(../assets/img6.jpg);
+    
 }
     
 section{
+    margin: 5px;
     text-align: center;
     }
    
@@ -25,7 +27,8 @@ section{
 
 
     p{
-        padding-top: 20px;
-        color: white;
-        font-size: 15px;
+    margin: 30px;
+    font-weight: 150;
+    line-height: 1.2;
+    font-size: 2em;
     }
