@@ -75,7 +75,6 @@ body{
 
 .click{
     padding: 30px 55px;
-    /* margin-left: 200px; */
     border: 1px solid white;
     background: rgb(202, 55, 55);
     background-size: 300px;
@@ -432,6 +431,16 @@ span{
 
     .hero_titulo{
         font-size: 55px ;
+    }
+  }
+
+  @media screen and (max-width:400px){
+    .hero_subtitulo{
+        font-size: 15px;
+    }
+
+    .hero_titulo{
+        font-size: 40px;
     }
   }
   
